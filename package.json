@@ -1,0 +1,19 @@
+{
+  "name": "full_node.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aronhopson/Node_js.git"
+  },
+  "author": "Hopson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aronhopson/Node_js/issues"
+  },
+  "homepage": "https://github.com/Aronhopson/Node_js#readme"
+}

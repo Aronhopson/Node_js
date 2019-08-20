@@ -1,7 +1,6 @@
 const chalk = require("chalk");
 const yargs = require("yargs");
-const validator = require("validator");
-const getNotes = require("./notes.js")
+const notes = require("./notes.js")
 
 //Custom  yargs version
 yargs.version('1.0.0');
@@ -23,34 +22,8 @@ yargs.command({
     }
 },
     handler:  function(argv){
-        console.log("Title: " + argv.title)
-        console.log("Body: " + argv.body)
+       notes.addNote(argv.title, argv.body)
     }
 
 });
-
-yargs.command({
-    command : 'remove',
-    describe :'remove new looks',
-    handler:  function(){
-        console.log("Removing new looks");
-    }
-});
-
-yargs.command({
-    command : 'build',
-    describe :'build new looks',
-    handler:  function(){
-        console.log("Building new looks");
-    }
-});
-
-yargs.command({
-    command : 'list',
-    describe :'list new looks',
-    handler:  function(){
-        console.log("Listing new looks");
-    }
-});
-
-yargs.parse()
+   yargs.parse()
